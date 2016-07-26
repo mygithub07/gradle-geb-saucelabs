@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BrowserSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-07-14T02:20:14" hostname="Poonams-MacBook-Air.local" time="9.478">
+  <properties/>
+  <testcase name="cookieTest" classname="BrowserSpec" time="9.478"/>
+  <system-out><![CDATA[no of cookies1
+cookie name:NID value:82=Jckqp1hwDWkkpAquKC-_vUoHi_8Y3_X0wO9HUesaYFu3n8bUNegfasWigLk7qplcBsIqERB9wEh9n6U33pBvcE87lHkpsOiyDCVVuuwZkASu1ACgJfrbNZoXefAZv3DXAmfIPVpMIwlJUn0
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4) on port 18133
+Only local connections are allowed.
+]]></system-err>
+</testsuite>

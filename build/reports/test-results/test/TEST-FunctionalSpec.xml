@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FunctionalSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-07-19T00:45:46" hostname="Poonams-MacBook-Air.local" time="48.742">
+  <properties/>
+  <testcase name="NavigationConfigPage" classname="FunctionalSpec" time="48.742"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4) on port 21900
+Only local connections are allowed.
+]]></system-err>
+</testsuite>

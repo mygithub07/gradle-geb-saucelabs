@@ -1,0 +1,46 @@
+buildscript {
+    repositories {
+        jcenter()
+    }    
+}
+ 
+apply plugin: 'java'
+apply plugin: 'groovy'
+ 
+repositories {
+    
+    mavenCentral()
+}
+ 
+dependencies {
+           def seleniumVersion = '2.45.0'
+           def phantomJsVersion = '1.1.0'
+		   def groovyVersion = '2.4.3'
+		   
+	//groovy
+	compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+	
+	// selenium drivers
+     testCompile "org.seleniumhq.selenium:selenium-ie-driver:$seleniumVersion"
+     testCompile "org.seleniumhq.selenium:selenium-chrome-driver:$seleniumVersion"
+     //testCompile "org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion"
+     testCompile "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
+	 testRuntime "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
+     testCompile("com.github.detro.ghostdriver:phantomjsdriver:$phantomJsVersion") {
+    transitive = false
+    }
+	
+	// geb
+    testCompile "org.gebish:geb-spock:0.10.0"
+	
+	 // spock
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+	
+	//junit
+	testCompile "org.gebish:geb-junit4:0.10.0"
+	testCompile "junit:junit-dep:4.8.2"
+		}
+		
+		test {
+			systemProperties "geb.build.reportsDir": "$reportsDir/geb"
+		}
